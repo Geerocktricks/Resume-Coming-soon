@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #021114 , #68adaa);
+    /* background: linear-gradient(130deg, #123942 50%, #0a7570 50%); */
+    color: white;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.loader{
+    /* background: rgb(255, 255, 255) url('/images/Pinwheel.gif') no-repeat center center; */
+
+
+    /* background-size: 8%; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    /* background-color: rgba(0, 16, 22); */
+    
+}
+
+.imgHolder{
+    background-image: url('/images/me.jpg');
+    height: 100px;
+    width: 100px;
+    background-color: indianred;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+    margin: auto;
+}
+
+li{
+    list-style: none;
+    display: grid;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 70%;
+    margin: auto;
+    height: 60px;
+    line-height: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+}
+.container{
+    -ms-transform: translate(0%, 30%);
+    transform: translate(0%, 10%);
+    opacity: 0;
+    /* display: none; */
+    transition: opacity 2s ease-in;
+}
+li:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #123942;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a:hover{
+    color: white;
+}
+h3{
+    font-family: cursive;
+    color: #33717c;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(216, 215, 215);
+}

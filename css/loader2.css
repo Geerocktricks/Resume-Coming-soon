@@ -1,0 +1,28 @@
+.loader{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   font-family: 'ZCOOL KuaiLe', cursive;
+   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(216, 215, 215);
+    color: #33717c;
+   font-size: 32px;
+}
+.loader::after{
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: text-top;
+    margin-top: -39px;
+    margin-left: 155px;
+    animation: dots steps(4, end) 2s infinite;
+    width: 0px;
+}
+
+@keyframes dots {
+    to {
+        width: 1.25em;
+    }
+}
